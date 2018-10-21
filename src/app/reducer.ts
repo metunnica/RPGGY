@@ -1,7 +1,7 @@
-import { ActionReducerMap, createFeatureSelector } from '@ngrx/store';
+import { ActionReducerMap } from '@ngrx/store';
 
-import { State as AuthState, reducer as authReducer } from './auth/reducers/auth.reducer';
-import { State as GameState, reducer as gameReducer } from './games/reducers/game.reducer';
+import { reducer as authReducer, State as AuthState } from './auth';
+import { reducer as gameReducer, State as GameState } from './games';
 
 export interface AppState {
   auth?: AuthState;
