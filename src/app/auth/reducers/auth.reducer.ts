@@ -15,7 +15,7 @@ export function reducer(state = initialState, action: authActions.AuthActions): 
         ...state,
         authUser: action.payload
       };
-
+    case authActions.AuthActionTypes.LoadAuths:
     default:
       return state;
   }

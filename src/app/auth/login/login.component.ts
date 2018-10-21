@@ -10,7 +10,6 @@ import { LoadAuths } from '../actions/auth.actions';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public authUser$ = this.store.select(state => state);
   constructor(private store: Store<State>) {}
 
   ngOnInit() {}

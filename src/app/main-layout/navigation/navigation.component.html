@@ -1,20 +1,14 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
   <mdb-navbar-brand>
-    <a href="#" class="navbar-brand">Navbar</a>
+    <a href="#" class="navbar-brand">RPGGY</a>
   </mdb-navbar-brand>
   <links>
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+        <a [routerLink]="['/']" class="nav-link waves-light" mdbWavesEffect>Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
+      <li [routerLink]="['/games']" class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Games</a>
       </li>
     </ul>
   </links>

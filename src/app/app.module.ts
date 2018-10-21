@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './main-layout/footer/footer.component';
 import { NavigationComponent } from './main-layout/navigation/navigation.component';
+import { reducers } from './reducer';
 
 @NgModule({
   declarations: [AppComponent, FooterComponent, NavigationComponent],
@@ -19,7 +20,7 @@ import { NavigationComponent } from './main-layout/navigation/navigation.compone
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(reducers),
     EffectsModule.forRoot([]),
     !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
