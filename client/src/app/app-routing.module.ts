@@ -4,8 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'static',
     pathMatch: 'full'
+  },
+  {
+    path: 'static',
+    loadChildren: './static/static.module#StaticModule'
+  },
+  {
+    path: 'blog',
+    loadChildren: './blog/blog.module#BlogModule'
   },
   {
     path: 'login',
